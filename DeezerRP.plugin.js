@@ -168,6 +168,9 @@ class DeezerRP {
 
     stop() {
         clearInterval(this.taskID);
+        this.taskID = -1;
+        this.startPlaying = 0;
+        currentTrack = {};
         this.setActivity({});
         this.pluginStarted = false;
     }
