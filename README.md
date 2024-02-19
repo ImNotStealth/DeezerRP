@@ -24,7 +24,7 @@ Unfortunately due to Deezer's (kinda bad)) API, you can only see the last track 
 * Once you logged in you will be redirected to your "Redirect URL" and it will now have a code in the URL, copy it and paste it in your plugin's settings
 
 ![Login Code URL](ReadMeAssets/login_code_url.png)
-* Next, do the same thing for your access token (click and link and copy the token and paste it in your plugin's settings)
+* Next, do the same thing for your access token (click the link and copy the token and paste it in your plugin's settings)
 
 ![Access Token](ReadMeAssets/access_token.png)
 * Finally your User ID, go to *https://deezer.com/* and click on your profile. You will see in the URL 10 digits, copy those and paste them in your settings and you're done!
