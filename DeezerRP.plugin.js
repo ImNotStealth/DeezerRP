@@ -133,7 +133,6 @@ class DeezerRP {
         this.rpc = {};
         this.rpc = BdApi.findModuleByProps("dispatch", "_subscriptions");
         this.getLocalPresence = BdApi.findModuleByProps("getLocalPresence").getLocalPresence;
-        this.startPlaying = Date.now();
         this.taskID = -1;
         this.request = require("request");
 
@@ -161,6 +160,7 @@ class DeezerRP {
             this.saveSettings();
         }
 
+        this.startPlaying = Date.now();
         this.updateRichPresence();
         this.taskID = setInterval(() => this.updateRichPresence(), 1000 * 30);
         this.pluginStarted = true;
@@ -217,7 +217,7 @@ class DeezerRP {
             name: this.settings.artistActivityName ? currentTrack.artist : "Deezer",
             details: currentTrack.title,
             state: "by " + currentTrack.artist,
-            timestamps: { start: this.startPlaying ? Math.floor(this.startPlaying / 1000) : Math.floor(Date.now() / 1000) },
+            timestamps: { start: Math.floor(this.startPlaying / 1000) },
             assets: {
                 large_image: this.settings.showAlbumCover ? await this.getAsset(currentTrack.cover) : await this.getAsset("deezer_logo")
             },
