@@ -29,6 +29,8 @@ Unfortunately due to Deezer's (kinda bad)) API, you can only see the last track 
 ![Access Token](ReadMeAssets/access_token.png)
 * Finally your User ID, go to *https://deezer.com/* and click on your profile. You will see in the URL 10 digits, copy those and paste them in your settings and you're done!
 
+![Profile](ReadMeAssets/deezer_profile.png)  ![User ID](ReadMeAssets/user_id.png)
+
 ## Troubleshoot
 * If after a minute or two, you don't see the RP. Check in your Discord settings that you're showing your activities (The setting can be found in Settings -> Activity Privacy -> Display current activity as a status message.)
 
@@ -36,3 +38,5 @@ Unfortunately due to Deezer's (kinda bad)) API, you can only see the last track 
 * Check at the top of your Discord window if the plugin isn't saying that there's an error. If you have one it should look like this and you should check your settings in case you missed a step.
 
 ![Error Banner](ReadMeAssets/rp_error.png)
+
+* Obviously if you have any issues, make an issue or a pull request and I'll try to look into it!
