@@ -1,5 +1,5 @@
 # DeezerRP
-This BetterDiscord plugin retrieves your last played track on Deezer and shows it on your Discord profile as a Rich Presence.\
+This BetterDiscord plugin retrieves your last played track on Deezer and shows it on your Discord profile as a Rich Presence.
 
 Unfortunately due to Deezer's (kinda bad)) API, you can only see the last track you listened to, not the current one. (TLDR: The RP will be late by one song)
 
