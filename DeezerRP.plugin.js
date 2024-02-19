@@ -287,9 +287,12 @@ class DeezerRP {
         let template = document.createElement("template");
         template.innerHTML = 
         `<div style="color: var(--header-primary);font-size: 16px;font-weight: 300;line-height: 22px;max-width: 550px;margin-top: 17px;">
+
+        <h1 class="colorStandard__5111e size20__99138 strong__068cd">Configuration</h1>
+        <br>
+
         <span>If you want a visual guide, you can follow the tutorial on <a href="https://github.com/ImNotStealth/DeezerRP" target="_blank">GitHub</a>.</span>
-        <br>
-        <br>
+        <br><br>
 
         <b>Deezer App ID</b>
         <br>
@@ -309,7 +312,7 @@ class DeezerRP {
         <input class="dzAppSecret inputDefault__80165 input_d266e7" placeholder="App Secret (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
         <br><br>
 
-        <span>Click <a href="https://connect.deezer.com/oauth/auth.php?app_id=${this.settings.appID}&redirect_uri=${this.settings.redirectURI}&perms=listening_history" target="_blank">here</a> to login.</span>
+        <span>Click <a class="dzLinkLogin" target="_blank">here</a> to login.</span>
         <br>
         <span>Once logged in, copy everything after "?code=" from the URL into the text box below.</span>
         <br><br>
@@ -320,7 +323,7 @@ class DeezerRP {
         <input class="dzLoginCode inputDefault__80165 input_d266e7" placeholder="Login Code (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
         <br><br>
 
-        <span>Click <a href="https://connect.deezer.com/oauth/access_token.php?app_id=${this.settings.appID}&secret=${this.settings.appSecret}&code=${this.settings.loginCode}" target="_blank">here</a> to get your access token.</span>
+        <span>Click <a class="dzLinkToken" target="_blank">here</a> to get your access token.</span>
         <br>
         <span>Next, copy everything between "access_token=" and "&expires" from the result into the text box below.</span>
         <br><br>
@@ -363,19 +366,30 @@ class DeezerRP {
         let dzArtistActivityName = template.content.firstElementChild.getElementsByClassName('dzArtistActivityName')[0];
         let dzListenAlongButton = template.content.firstElementChild.getElementsByClassName('dzListenAlongButton')[0];
         let dzShowAlbumCover = template.content.firstElementChild.getElementsByClassName('dzShowAlbumCover')[0];
+        let dzLinkLogin = template.content.firstElementChild.getElementsByClassName('dzLinkLogin')[0];
+        let dzLinkToken = template.content.firstElementChild.getElementsByClassName('dzLinkToken')[0];
 
         dzAppID.value = this.settings.appID ?? "";
         dzRedirectURI.value = this.settings.redirectURI ?? "";
         dzLoginCode.value = this.settings.loginCode ?? "";
         dzAppSecret.value = this.settings.appSecret ?? "";
         dzAccessToken.value = this.settings.accessToken ?? "";
-        dzUserID.value = this.settings.userID ?? "";
+        dzUserID.value = this.settings.userID ?? "";    
+
+        let updateLoginLink = () => {
+            dzLinkLogin.href = `https://connect.deezer.com/oauth/auth.php?app_id=${this.settings.appID}&redirect_uri=${this.settings.redirectURI}&perms=listening_history,offline_access`;
+        }
+        let updateTokenLink = () => {
+            dzLinkToken.href = `https://connect.deezer.com/oauth/access_token.php?app_id=${this.settings.appID}&secret=${this.settings.appSecret}&code=${this.settings.loginCode}`;
+        }
 
         let loadToggleButton = (el, setting) => {
             el.classList.toggle("bd-switch-checked", this.settings[setting] === true);
             el.getElementsByTagName("input")[0].toggleAttribute("checked", this.settings[setting] === true);
         }
 
+        updateLoginLink();
+        updateTokenLink();
         loadToggleButton(dzDisableWhenSpotifyBtn, "disableWhenSpotify");
         loadToggleButton(dzDisableWhenActivityBtn, "disableWhenActivity");
         loadToggleButton(dzListeningTo, "listeningTo");
@@ -385,18 +399,23 @@ class DeezerRP {
 
         let updateAppID = () => {
             this.settings.appID = dzAppID.value;
+            updateLoginLink();
+            updateTokenLink();
             this.saveSettings();
         }
         let updateRedirectURI = () => {
             this.settings.redirectURI = dzRedirectURI.value;
+            updateLoginLink();
             this.saveSettings();
         }
         let updateLoginCode = () => {
             this.settings.loginCode = dzLoginCode.value;
+            updateTokenLink();
             this.saveSettings();
         }
         let updateAppSecret = () => {
             this.settings.appSecret = dzAppSecret.value;
+            updateTokenLink();
             this.saveSettings();
         }
         let updateAccessToken = () => {
