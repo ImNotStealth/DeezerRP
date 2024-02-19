@@ -3,6 +3,7 @@
  * @description Adds Deezer integration (just like Spotify) (Due to Deezer's API restrictions, it only shows your last played song, not your current one. :/)
  * @author Stealth (imnotstealth)
  * @version 1.0.0
+ * @source https://github.com/ImNotStealth/DeezerRP/blob/master/DeezerRP.plugin.js
  */
 
 // My License
