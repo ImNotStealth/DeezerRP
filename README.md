@@ -3,7 +3,7 @@ This BetterDiscord plugin retrieves your last played track on Deezer and shows i
 
 ![Preview Listening](ReadMeAssets/rp_preview_1.png)  ![Preview Playing](ReadMeAssets/rp_preview_2.png)
 
-Unfortunately due to Deezer's (kinda bad)) API, you can only see the last track you listened to, not the current one. (TLDR: The RP will be late by one song)
+Unfortunately due to Deezer's (kinda bad) API, you can only see the last track you listened to, not the current one. (TLDR: The RP will be late by one song)
 
 ## Features
 * Show what songs you're listening with Deezer on Discord.
