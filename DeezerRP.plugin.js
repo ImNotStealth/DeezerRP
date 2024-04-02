@@ -297,19 +297,19 @@ class DeezerRP {
         <b>Deezer App ID</b>
         <br>
         <span>Input your Deezer App ID. You can create an application <a href="https://developers.deezer.com/myapps/" target="_blank">here</a>.</span><br>
-        <input class="dzAppID inputDefault__80165 input_d266e7" placeholder="App ID (Example: 123456)">
+        <input class="dzAppID inputDefault__22335 input_f27786" placeholder="App ID (Example: 123456)">
         <br><br>
 
         <b>Redirect URI</b>
         <br>
         <span>This should match <b>exactly</b> what you used in your Application settings.</span><br>
-        <input class="dzRedirectURI inputDefault__80165 input_d266e7" placeholder="Redirect URI (Example: https://google.com/)">
+        <input class="dzRedirectURI inputDefault__22335 input_f27786" placeholder="Redirect URI (Example: https://google.com/)">
         <br><br>
 
         <b>App Secret</b>
         <br>
         <span>Input your Deezer App Secret (Found in your Application settings)</span><br>
-        <input class="dzAppSecret inputDefault__80165 input_d266e7" placeholder="App Secret (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
+        <input class="dzAppSecret inputDefault__22335 input_f27786" placeholder="App Secret (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
         <br><br>
 
         <span>Click <a class="dzLinkLogin" target="_blank">here</a> to login.</span>
@@ -320,7 +320,7 @@ class DeezerRP {
         <b>Login Code</b>
         <br>
         <span>Input your Login Code</span><br>
-        <input class="dzLoginCode inputDefault__80165 input_d266e7" placeholder="Login Code (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
+        <input class="dzLoginCode inputDefault__22335 input_f27786" placeholder="Login Code (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
         <br><br>
 
         <span>Click <a class="dzLinkToken" target="_blank">here</a> to get your access token.</span>
@@ -331,13 +331,13 @@ class DeezerRP {
         <b>Access Token</b>
         <br>
         <span>Finally, input your Access Token (This is only used for seeing your track history and can't be used to retrieve your account or any personal info)</span><br>
-        <input class="dzAccessToken inputDefault__80165 input_d266e7" placeholder="Access Token (Example: fruCX6s5HE9IeVXY4XI0Hd9W1FiFqp...)">
+        <input class="dzAccessToken inputDefault__22335 input_f27786" placeholder="Access Token (Example: fruCX6s5HE9IeVXY4XI0Hd9W1FiFqp...)">
         <br><br>
 
         <b>Deezer User ID</b>
         <br>
         <span>Input your Access Token (can be found on the <a href="https://deezer.com/" target="_blank">Deezer Home Page</a> by clicking on your Profile and checking the URL)</span><br>
-        <input class="dzUserID inputDefault__80165 input_d266e7" placeholder="User ID (Example: 1234567890)">
+        <input class="dzUserID inputDefault__22335 input_f27786" placeholder="User ID (Example: 1234567890)">
         <br><br>
 
         <div class="bd-setting-divider"></div>
