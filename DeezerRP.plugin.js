@@ -288,7 +288,7 @@ class DeezerRP {
         template.innerHTML = 
         `<div style="color: var(--header-primary);font-size: 16px;font-weight: 300;line-height: 22px;max-width: 550px;margin-top: 17px;">
 
-        <h1 class="colorStandard__5111e size20__99138 strong__068cd">Configuration</h1>
+        <h1 class="heading-xl/bold_dc00ef defaultColor_e9e35f">Configuration</h1>
         <br>
 
         <span>If you want a visual guide, you can follow the tutorial on <a href="https://github.com/ImNotStealth/DeezerRP" target="_blank">GitHub</a>.</span>
@@ -297,19 +297,19 @@ class DeezerRP {
         <b>Deezer App ID</b>
         <br>
         <span>Input your Deezer App ID. You can create an application <a href="https://developers.deezer.com/myapps/" target="_blank">here</a>.</span><br>
-        <input class="dzAppID inputDefault__22335 input_f27786" placeholder="App ID (Example: 123456)">
+        <input class="dzAppID inputDefault_f8bc55 input_f8bc55" placeholder="App ID (Example: 123456)">
         <br><br>
 
         <b>Redirect URI</b>
         <br>
         <span>This should match <b>exactly</b> what you used in your Application settings.</span><br>
-        <input class="dzRedirectURI inputDefault__22335 input_f27786" placeholder="Redirect URI (Example: https://google.com/)">
+        <input class="dzRedirectURI inputDefault_f8bc55 input_f8bc55" placeholder="Redirect URI (Example: https://google.com/)">
         <br><br>
 
         <b>App Secret</b>
         <br>
         <span>Input your Deezer App Secret (Found in your Application settings)</span><br>
-        <input class="dzAppSecret inputDefault__22335 input_f27786" placeholder="App Secret (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
+        <input class="dzAppSecret inputDefault_f8bc55 input_f8bc55" placeholder="App Secret (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
         <br><br>
 
         <span>Click <a class="dzLinkLogin" target="_blank">here</a> to login.</span>
@@ -320,7 +320,7 @@ class DeezerRP {
         <b>Login Code</b>
         <br>
         <span>Input your Login Code</span><br>
-        <input class="dzLoginCode inputDefault__22335 input_f27786" placeholder="Login Code (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
+        <input class="dzLoginCode inputDefault_f8bc55 input_f8bc55" placeholder="Login Code (Example: 123a1b6gg98hu12345678b0p5pqd0at9)">
         <br><br>
 
         <span>Click <a class="dzLinkToken" target="_blank">here</a> to get your access token.</span>
@@ -331,19 +331,19 @@ class DeezerRP {
         <b>Access Token</b>
         <br>
         <span>Finally, input your Access Token (This is only used for seeing your track history and can't be used to retrieve your account or any personal info)</span><br>
-        <input class="dzAccessToken inputDefault__22335 input_f27786" placeholder="Access Token (Example: fruCX6s5HE9IeVXY4XI0Hd9W1FiFqp...)">
+        <input class="dzAccessToken inputDefault_f8bc55 input_f8bc55" placeholder="Access Token (Example: fruCX6s5HE9IeVXY4XI0Hd9W1FiFqp...)">
         <br><br>
 
         <b>Deezer User ID</b>
         <br>
         <span>Input your Access Token (can be found on the <a href="https://deezer.com/" target="_blank">Deezer Home Page</a> by clicking on your Profile and checking the URL)</span><br>
-        <input class="dzUserID inputDefault__22335 input_f27786" placeholder="User ID (Example: 1234567890)">
+        <input class="dzUserID inputDefault_f8bc55 input_f8bc55" placeholder="User ID (Example: 1234567890)">
         <br><br>
 
         <div class="bd-setting-divider"></div>
 
         <br>
-        <h1 class="colorStandard__5111e size20__99138 strong__068cd">Customization</h1>
+        <h1 class="heading-xl/bold_dc00ef defaultColor_e9e35f">Customization</h1>
         <br>
 
         <div class="bd-setting-item inline"><div class="bd-setting-header"><label class="bd-setting-title">Disable when Spotify is active</label><div class="dzDisableWhenSpotifyBtn bd-switch bd-switch-checked"><input type="checkbox" checked=""><div class="bd-switch-body"><svg class="bd-switch-slider" viewBox="0 0 28 20" preserveAspectRatio="xMinYMid meet"><rect class="bd-switch-handle" fill="white" x="4" y="0" height="20" width="20" rx="10"></rect><svg class="bd-switch-symbol" viewBox="0 0 20 20" fill="none"><path></path><path></path></svg></svg></div></div></div></div>
